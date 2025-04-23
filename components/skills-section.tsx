@@ -27,9 +27,9 @@ export default function SkillsSection() {
   }
 
   const softSkillGroups = {
-    "Professional Skills 💼": ["Communication", "Teamwork", "Leadership", "Adaptability"],
-    "Cognitive Skills 🧠": ["Problem Solving", "Critical Thinking", "Creativity", "Attention to Detail"],
-    "Productivity Skills ⚙️": ["Time Management", "Collaboration", "Decision Making", "Research & Analysis"],
+    "Professional Skills ": ["Communication", "Teamwork", "Leadership", "Adaptability"],
+    "Cognitive Skills ": ["Problem Solving", "Critical Thinking", "Creativity", "Attention to Detail"],
+    "Productivity Skills ": ["Time Management", "Collaboration", "Decision Making", "Research & Analysis"],
   }
 
   return (
