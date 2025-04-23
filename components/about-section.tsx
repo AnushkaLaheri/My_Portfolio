@@ -39,7 +39,7 @@ export default function AboutSection() {
             <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-primary/20 md:h-64 md:w-64" onClick={handleImageClick}>
               <Image
                 src="/photo.jpg"
-                alt="Anushka Kumari"
+                alt="Anushka Laheri"
                 fill
                 sizes="(max-width: 768px) 192px, 256px" // Adjusted sizes for smaller circle
                 className="object-cover rounded-full brightness-110" // Ensure circular shape
@@ -72,7 +72,7 @@ export default function AboutSection() {
             <div className="relative w-96 h-96 overflow-hidden rounded-full border-4 border-primary/20 shadow-2xl"> {/* Add border and shadow */}
               <Image
                 src="/photo.jpg"
-                alt="Anushka Kumari"
+                alt="Anushka Laheri"
                 layout="fill" // Use layout fill to cover the container
                 className="object-cover rounded-full brightness-125" // Increase brightness
               />
