@@ -11,9 +11,9 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Anushka Kumari | Full-Stack Developer",
+  title: "Anushka Laheri | Full-Stack Developer",
   description:
-    "Anushka Kumari is a B.Tech CSBS Student, Full-Stack Developer, and ML Enthusiast passionate about turning ideas into real-world solutions.",
+    "Anushka Laheri is a B.Tech CSBS Student, Full-Stack Developer, and ML Enthusiast passionate about turning ideas into real-world solutions.",
   
 }
 

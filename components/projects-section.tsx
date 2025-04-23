@@ -15,21 +15,21 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "Food For All",
-      description: "AI-based food donation app with dark mode, gamified UI, confetti, sound effects, and leaderboard.",
+      description: "Community-focused donation app with real-time updates, gamified interface, and accessibility features.",
       tech: ["React", "Tailwind", "Firebase"],
       github: "https://github.com/Garimaraj15/food-for-all",
       demo: "https://foodforall-d1uekqcqe-anushkalaheri-gmailcoms-projects.vercel.app",
     },
     {
       title: "AI in Agriculture",
-      description: "Crop disease prediction using ML with 90%+ accuracy, integrated with a React dashboard.",
+      description: "ML-based crop disease predictor with 90%+ accuracy and an intuitive farmer-facing dashboard.",
       tech: ["Python", "Flask", "React"],
       github: "https://github.com/AnushkaLaheri/AI-Agri-Innovators",
       demo: "#",
     },
     {
       title: "Personal Financial Assistant",
-      description: "Budget tracker with secure login, data visualizations, and live expense analytics.",
+      description: "Full-stack budget tracker with secure login, user-specific analytics, and savings goal tracking.",
       tech: ["React", "Node.js", "MongoDB", "Firebase Auth"],
       github: "#",
       demo: "#",

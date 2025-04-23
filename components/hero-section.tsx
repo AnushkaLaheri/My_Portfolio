@@ -31,7 +31,7 @@ export default function HeroSection() {
 
       const link = document.createElement('a');
       link.href = "/Anushka_Kumari_Resume.pdf"; // Ensure this path is correct
-      link.download = "Anushka_Kumari_Resume.pdf"; // Specify the filename
+      link.download = "Anushka_Laheri_Resume.pdf"; // Specify the filename
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -51,7 +51,7 @@ export default function HeroSection() {
       <section className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center py-12 md:py-24 lg:py-32 relative overflow-hidden bg-background/50 transition-all duration-500">
       <div className={`space-y-6 text-center transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}>
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Anushka Kumari</h1>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Anushka Laheri</h1>
             <p className="text-xl text-muted-foreground">B.Tech CSBS Student | Full-Stack Developer | ML Enthusiast</p>
           </div>
           <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">

@@ -10,68 +10,95 @@ export default function SkillsSection() {
     triggerOnce: true,
   })
 
-  const technicalSkills = [
-    "C",
-    "Java",
-    "Python",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "React.js",
-    "Tailwind",
-    "Node.js",
-    "Express.js",
-    "MySQL",
-    "MongoDB",
-    "Git",
-    "GitHub",
-    "Data Structures & Algorithms",
-    "REST APIs",
-    "ML",
-    "JWT",
-  ]
+  const technicalSkills = {
+    "Programming Languages": ["C", "Java", "Python", "JavaScript"],
+    "Web Development": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "Bootstrap",
+    ],
+    "Tools & Concepts": ["Git", "GitHub", "DSA", "REST APIs", "JWT", "ML", "Firebase"],
+  }
 
-  const softSkills = ["Problem Solving", "Communication", "Teamwork", "Research & Analysis"]
+  const softSkillGroups = {
+    "Professional Skills 💼": ["Communication", "Teamwork", "Leadership", "Adaptability"],
+    "Cognitive Skills 🧠": ["Problem Solving", "Critical Thinking", "Creativity", "Attention to Detail"],
+    "Productivity Skills ⚙️": ["Time Management", "Collaboration", "Decision Making", "Research & Analysis"],
+  }
 
   return (
     <section id="skills" className="py-16 md:py-24 bg-muted/50">
       <div className="container px-4 md:px-6">
-        <h2 className="mb-12 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Skills</h2>
+        <h2 className="mb-12 text-4xl font-extrabold tracking-tight text-center sm:text-5xl">
+          Skills
+        </h2>
         <div
           ref={ref}
-          className={`grid gap-8 md:grid-cols-2 transition-all duration-700 ${inView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+          className={`grid gap-8 md:grid-cols-2 transition-all duration-700 ease-out ${
+            inView ? "opacity-100 scale-100" : "opacity-0 scale-95"
+          }`}
         >
-          <Card className="border bg-background/60 backdrop-blur-md">
+          {/* Technical Skills Card */}
+          <Card className="border bg-background/60 backdrop-blur-md shadow-lg">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-xl">
                 <span className="text-primary">💻</span> Technical Skills
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {technicalSkills.map((skill, index) => (
-                  <Badge key={index} variant="secondary" className="text-sm">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+              {Object.entries(technicalSkills).map(([category, skills], index) => (
+                <div key={index} className="mb-4">
+                  <h3 className="text-sm font-semibold text-muted-foreground mb-1 uppercase tracking-wide">
+                    {category}
+                  </h3>
+                  <div className="flex flex-wrap gap-1">
+                    {skills.map((skill, skillIndex) => (
+                      <Badge
+                        key={skillIndex}
+                        variant="secondary"
+                        className="text-xs px-2 py-0.5 hover:scale-105 transition-transform"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </CardContent>
           </Card>
-          <Card className="border bg-background/60 backdrop-blur-md">
+
+          {/* Soft Skills Card */}
+          <Card className="border bg-background/60 backdrop-blur-md shadow-lg">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-xl">
                 <span className="text-primary">🎯</span> Soft Skills
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {softSkills.map((skill, index) => (
-                  <Badge key={index} variant="secondary" className="text-sm">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+              {Object.entries(softSkillGroups).map(([group, skills], index) => (
+                <div key={index} className="mb-4">
+                  <h3 className="text-sm font-semibold text-muted-foreground mb-1 uppercase tracking-wide">
+                    {group}
+                  </h3>
+                  <div className="flex flex-wrap gap-1">
+                    {skills.map((skill, skillIndex) => (
+                      <Badge
+                        key={skillIndex}
+                        variant="secondary"
+                        className="text-xs px-2 py-0.5 hover:scale-105 transition-transform"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </CardContent>
           </Card>
         </div>

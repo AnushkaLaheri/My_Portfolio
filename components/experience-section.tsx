@@ -30,8 +30,8 @@ export default function ExperienceSection() {
                 <CardContent>
                   <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                     <li>Self-paced internship (80+ hours)</li>
-                    <li>Astronomy, cosmology, and space policy</li>
-                    <li>Collaborated with a global space-enthusiast community</li>
+                    <li>Covered astronomy, space policy, and cosmology</li>
+                    <li>Engaged in research discussions and knowledge sharing with global peers</li>
                   </ul>
                 </CardContent>
               </Card>
