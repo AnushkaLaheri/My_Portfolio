@@ -31,8 +31,8 @@ export default function ProjectsSection() {
       title: "Personal Financial Assistant",
       description: "Full-stack budget tracker with secure login, user-specific analytics, and savings goal tracking.",
       tech: ["React", "Node.js", "MongoDB", "Firebase Auth"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/AnushkaLaheri/Personal-Finance-App",
+      demo: "https://personal-finance-app-tawny.vercel.app",
     },
   ]
 
